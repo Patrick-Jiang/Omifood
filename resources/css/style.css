@@ -143,7 +143,8 @@ a:active {
 
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -155,7 +156,8 @@ a:active {
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   color: white;
   background-color: #e67e22;
   border: 1px solid #e67e22;
@@ -170,12 +172,15 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #b05d14;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit] {
   border: 1px solid #b05d14;
 
 }
@@ -197,6 +202,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -368,4 +374,181 @@ header {
 
 .city-feature {
   margin-bottom: 5px;
+}
+
+/* --------------------------------------------- */
+/* TESTMONIALS */
+/* --------------------------------------------- */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/back-customers.jpg");
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 4%;
+  font-style: italic;
+  line-height: 140%;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 20px;
+
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 40px;
+  /* display: block; */
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------- */
+/* SIGN UP */
+/* --------------------------------------------- */
+.section-plans {
+
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 10%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-box div:first-child {
+  background-color: hsla(0, 0%, 91%, 0.89);
+
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------- */
+/* CONTACT US */
+/* --------------------------------------------- */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+footer {
+  background-color: #333;
+
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.social-icons {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+  margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited {
+  font-size: 160%;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
 }
